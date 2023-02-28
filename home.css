@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: 100%;
+    margin: 1rem 2rem;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between; 
+}
+
+header{
+    background-image: linear-gradient(to left, rgba(203, 52, 150, 0), rgba(203, 52, 150,1));
+    padding: 0.1em 0;
+}
+
+h1{
+    margin: 0;
+    font-weight: 500;
+    font-family: "Comfortaa";
+    font-size: 3.5rem;
+}
+
+i{
+    padding: 0.5rem;
+}
+
+.subtitle{
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    font-size: 1rem;
+    word-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+span{
+    font-family: "Rock Salt";
+    color: #651a4b;
+    font-weight: bold;
+    word-spacing: 0.01rem;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav li{
+  margin: 0 1em;
+}
+
+nav a{
+   text-transform: uppercase;
+   font-family: "Ubuntu";
+   text-decoration: none;
+   letter-spacing: 0.1rem;
+   color: black;
+   font-weight: 700;
+}
+
+nav a:hover{
+  border-bottom:  solid #651a4b;
+  border-bottom-width: 3px;
+  padding-bottom: 5px;
+  transition: ease-in-out 250ms;
+}
+
+.current{
+  border-bottom: solid #651a4b;
+  border-bottom-width: 3px;
+  padding-bottom: 5px;
+}
+
+.current:hover{
+    transition: none;
+}
+
+.cover-page{
+    background: url(pic1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin-top: 1.5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-end;
+}
+
+.text-box{
+    background-color: #b3b3b3;
+    padding: 20px;
+    margin-top:170px;
+    width: 45%;
+    min-height: 20%; 
+    text-align: center;
+    font-family: "Comfortaa";
+    box-shadow: 0 0 2rem #b3b3b3;
+    
+}
+
+.text-box p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+.text-box h3{
+    margin: 0;
+    font-size: 3rem;
+}
+
+main{
+    margin: 3rem;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 0.75fr 3fr;
+    grid-template-rows: min-content auto;
+    grid-template-areas: "pic title"
+                         "pic content";
+   width: 85%;
+   margin-bottom: 2.5rem;
+   
+}
+
+img{
+    grid-area: pic;
+}
+
+.card-title{
+    grid-area: title;
+    margin: 0;
+    font-family: "Comfortaa";
+    font-size: 3rem;
+}
+
+.card-content{
+    grid-area: content;
+}
+
+.card-content p{
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-family: "Ubuntu";
+}
+
+.card-content a{
+    text-decoration: none;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    color: #cc3399;
+}
+
+.card-content a:hover{
+    color:  #0080ff;
+}
+
+.date{
+    font-size: 1rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.main-blog-title{
+    font-size: 1.25rem;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    font-weight: 600;
+    color: grey;
+}
+
+footer, i{
+  text-align: center;
+}
+
+footer{
+    background-image: linear-gradient(to left, rgba(203, 52, 150, 0), rgba(203, 52, 150,1));
+    padding: 0.75rem;
+}
+
+footer p{
+    font-family: "Ubantu";
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+footer i{
+    color:black;
+}
+
+footer i:hover{
+    color: white;
+}

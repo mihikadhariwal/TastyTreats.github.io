@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> About Us</title>
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock Salt">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <script src="https://kit.fontawesome.com/b59c55b5a0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Navigation-->
+        <header>
+            <div class="container container-nav">
+            <div class="website-title">
+                <h1><i><span class="head">Tasty Treats</span></i></h1>  
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="current">About</a></li>
+                    <li><a href="all-recipes.html">Recipes</a></li>
+                    <li><a href="testimonials.html">Reviews and Comments</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <div class="subtitle">
+            <p>Recipes for <span> Real, Actual, Everyday Life!</span> </p>
+        </div>
+
+        <div class="content-container">
+            <img src="https://weeattogether.com/wp-content/uploads/2018/02/6-Amazing-Food-Photography-Tricks-You-Need-To-Know-Pancakes.jpg" alt="pic" width="400" height="600">
+            <div class="upperhalf">
+                <h1>Hello and Welcome!</h1>
+                <p>At Tasty Treats, we celebrate how nourishing, fun, and delicious cooking with seasonal fruits and vegetables can be. We hope that the recipes here inspire you to try cooking a new vegetable, or try cooking a familiar vegetable in a new way.</p>
+            </div>
+
+            <div class="lowerhalf">
+                <p>Expect new recipes weekly, with a mix of savory and sweet including desserts, breakfasts, entrées, sides, snacks, and more.</p>
+                <br>
+                <p>In the past, we've shared many plant-based recipes. And as our team grows, you'll see our recipes represent more dietary preferences, tastes, and needs. We love creating plant-based recipes that are nourishing, simple, and delicious, in addition to classic desserts and baked goods!</p>
+                <br>
+                <p style="font-size: 1.5rem; font-weight: bold;">Whether you're new to Tasty Treats or have been around for a while, we're so glad you're here. </p>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <h1>Subscribe to our E-mail Newsletter!</h1>
+            <p>Ever wondered what to make for dinner? Or breakfast? Or dessert? The Tasty Treats newsletter has ideas for you! It features delicious, easy recipes and seasonal cooking tips to help you eat well at every meal of the day.</p>
+
+            <form onsubmit="CheckforBlank()">
+                <input type="text" name="full name" id="fname" placeholder="Enter Full Name" required>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter Email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required>
+                <br>
+                <input type="submit" class="submit" name="submit" value="SIGN ME UP!">
+            </form>
+            <p>You can change your mind at any time by clicking the unsubscribe link at the bottom of any of our emails. </p>
+        </div>
+
+        <script>
+            function CheckforBlank(){
+                if(document.getElementById('fname').value!="" && document.getElementById('email').value!=""){
+                    alert("Registered Successfully!");
+                    
+                }
+            }
+        </script>
+
+        <footer>
+            <p> Follow Us</p>
+            <span><a href="https://www.instagram.com/explore/tags/food/"><i class="fa-brands fa-square-instagram fa-lg"></a></i></span>
+            <span><a href="https://in.pinterest.com/amyll6/tasty-treats/"><i class="fa-brands fa-pinterest fa-lg"></a></i></span>
+            <span><a href="https://www.facebook.com/tastytreatsandaman/photos/"><i class="fa-brands fa-facebook-f fa-lg"></a></i></span>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: lightblue;
+}
+
+.main-img{
+    border: 2px solid #800060;
+    float: right;
+    margin-right: 5rem;
+    transform: rotate(90deg);
+}
+
+.recipe-container{
+    width: 65%;
+    margin: 1rem auto;
+    border: 3px solid #800060;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 1rem grey;
+}
+
+header{
+    text-align: center;
+    background-color: #b82e8a;
+    color: white;
+}
+
+.recipe-title{
+    font-family: "Comfortaa";
+    font-size: 3rem; 
+    margin:0;
+    padding: 1rem 0;
+}
+
+.recipe-subtitle{
+    font-family: "Ubuntu";
+    padding: 1rem 0;  
+}
+
+span{
+    margin-right: 1rem;
+}
+
+hr{
+    width: 75%;
+    height: 2px;
+}
+
+.recipe-decription{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin: 1.5rem 1rem 1.5rem;
+}
+
+.ingredients, .Instructions, .Equipment, .Equip{
+    margin: 1.5rem 1rem 1.5rem;
+}
+
+.ingredients h3, .Instructions h3, .Equip{
+    font-family: "Comfortaa";
+    font-weight: 600;
+    color:#b82e8a
+}
+
+.ingredients ul, .Instructions ol{
+    font-family: sans-serif;
+}
+
+.ingredients li{
+    line-height: 1.7rem;
+}
+
+.Instructions li{
+    padding: 0.75rem;
+}
+
+.Equipment{
+    display: flex; 
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.Equipment p{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+}

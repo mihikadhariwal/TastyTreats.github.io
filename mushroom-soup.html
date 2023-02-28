@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creamy Mushroom Soup</title>
+        <link rel="stylesheet" href="recipe.css">
+        <link rel="stylesheet" href="review.css">
+        <script src="review.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+    </head>
+
+    <body>
+        
+        <div class="recipe-container">
+            <header>
+                <h1 class="recipe-title">Creamy Mushroom Soup</h1>
+                <hr>
+                <div class="recipe-subtitle">
+                    <span> Prep time: 10mins</span>
+                    <span> Cooking Time: 25mins</span>
+                    <span> Cuisine: American</span>
+                </div>
+            </header>
+
+            <div class="recipe-decription">
+                <p>Earthy mushrooms, velvety broth, onions and shallots, plus splashes of cream to finish. This is a good soup moment! </p>
+            </div>
+
+            <img src="https://aubreyskitchen.com/wp-content/uploads/2020/07/healthy-mushroom-soup-in-white-bowl-next-to-bread.jpg" class="main-img" alt="pic" width="370" height="370" style="transform: rotate(360deg); ">
+
+            <div class="ingredients">
+                <h3> Ingredients</h3>
+                <ul>
+                    <li>3 tablespoons butter</li>
+                    <li>1 tablespoon oil</li>
+                    <li>16 ounces mushrooms, stems removed, very thinly sliced</li>
+                    <li>1-2 shallots, minced</li>
+                    <li>4 cloves garlic, thinly sliced</li>
+                    <li>1/4 cup all-purpose flour</li>
+                    <li>3 cups broth</li>
+                    <li>1/2-1 cup heavy cream</li>
+                    <li>1 teaspoon salt</li>
+                    <li>freshly ground black pepper to taste</li>
+                    <li>chopped fresh herbs</li>
+                    
+                </ul>
+                
+            </div>
+
+            <div class="Instructions">
+                <h3> Instructions</h3>
+                <ol>
+                    <li>Heat the butter and oil in a soup pot over medium high heat. Add the mushrooms and shallots; sauté for 10 minutes until soft, fragrant, and delicious. Add the garlic; sauté for 1-2 minutes.</li>
+                    <li>Add the flour; stir to coat everything. It will be very thick and dry (see notes). Add the broth slowly, stirring to form a smooth soup. </li>
+                    <li>Add the cream and the salt, pepper, and herbs. </li>
+                
+                    
+                </ol>
+            </div>
+            <h3 class="Equip"> Equipment Required</h3>
+            <div class="Equipment">
+                <div class="image-with-caption">
+                    <img src="https://m.media-amazon.com/images/I/81w1isabkmS._SX425_.jpg" alt="pic" width="200" height="200">
+                    <p> Chopping Board</p>
+                </div>
+
+                <div class="image-with-caption">
+                    <img src="https://media.istockphoto.com/photos/soup-pot-with-clipping-path-picture-id185092802?k=20&m=185092802&s=612x612&w=0&h=nHoFlX18RJcU4z3_Q9_fOY9-dmNUCkAMsMYhWvj8DDE=" alt="pic" width="200" height="200">
+                    <p>Large Pot</p>
+                </div>
+
+                <div class="image-with-caption">
+                    <img src="https://pinchofyum.com/wp-content/uploads/oxo-ladle-1-183x183.jpg" alt="pic" width="200" height="200">
+                    <p>Laddle</p>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <h3 class="review-title">Loved this recipe? Leave a review!</h3>
+        <button id="reviewbutton" onclick="openButton()">Review</button>
+
+    <dialog class="modal" id="modal"> <!-- review container-->
+        
+        <div class="review-heading">
+            <h3>Review</h3>
+            <button class="close-button" onclick="closeButton()">&times;</button>
+        </div>
+        <div class="review-content" id="review-content">
+            <form name="myform" onsubmit="return validate();">
+            Name:<br>
+            <input type="text" name="fullname" id="fname" class="textboxes" placeholder="Enter Full Name"><br><br>
+            E-mail:<br>
+            <input type="email" name="email" id="email" class="textboxes" placeholder="Enter your E-mail" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+            ><br><br>
+            Recipe:<br>
+            <input type="text" name="recipename" class="textboxes" value="Creamy Mushroom Soup" readonly><br><br>
+            
+            
+            <p>Was the recipe easy to follow?</p>
+            
+            <input type="radio" name="choice1" id="q1" >Yes<br>
+            <input type="radio" name="choice1" id="q1" >No<br>
+            <input type="radio" name="choice1" id="q1" >Somewhat<br>
+            
+            
+            
+            <p>Would you recommend this recipe to others?</p>
+            
+            <input type="radio" name="choice2" id="q2" >Yes<br>
+            <input type="radio" name="choice2" id="q2" >No<br>
+            <input type="radio" name="choice2" id="q2" >Maybe<br>
+            
+            
+            <p>How likely are you to follow this recipe again?</p>
+            <input type="radio" name="choice3" id="q3" >Very likely<br>
+            <input type="radio" name="choice3" id="q3" >Somewhat likely<br>
+            <input type="radio" name="choice3" id="q3" >Very unlikely<br><br><br>
+         
+            Additonal Comments/Feedback:<br>
+            <textarea name="comments" class="textboxes" cols="120" rows="10" style="max-width:100%;"></textarea>
+            
+            <div class="button">
+             <input type="submit" name="submit" class="submit-button" >
+            </div>
+
+          </form>
+
+        </div>
+    </dialog>
+    
+    </body>
+</html>

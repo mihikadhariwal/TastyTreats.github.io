@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: 100%;
+    margin: 1rem 2rem;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    background-image: linear-gradient(to left, rgba(203, 52, 150, 0), rgba(203, 52, 150,1));
+    padding: 0.1em 0;
+    
+}
+
+h1{
+    margin: 0;
+    font-weight: 500;
+    font-family: "Comfortaa";
+    font-size: 3.5rem;
+}
+
+i{
+    padding: 0.5rem;
+}
+
+.subtitle{
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    /*font-size: 1rem;*/
+    font-size:calc(0.5rem + 0.5vw);
+    word-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+span{
+    font-family: "Rock Salt";
+    color: #651a4b;
+    font-weight: bold;
+    word-spacing: 0.01rem;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+}
+
+nav li{
+  margin: 0 1em;
+}
+
+nav a{
+   text-transform: uppercase;
+   font-family: "Ubuntu";
+   text-decoration: none;
+   letter-spacing: 0.1rem;
+   color: black;
+   font-weight: 700;
+}
+
+nav a:hover{
+  border-bottom:  solid #651a4b;
+  border-bottom-width: 3px;
+  padding-bottom: 5px;
+  transition: ease-in-out 250ms;
+}
+
+
+.content-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-areas: "pic content1"
+                         "pic content2";
+
+   padding: 2rem;
+}
+
+.content-container img{
+    grid-area: pic;
+    margin: 0.5rem 0.5rem 0;
+    border-radius: 1rem;
+}
+
+.upperhalf{
+    grid-area: content1;
+    margin: 0.5rem 0;
+    background-color: #ebadd6;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.lowerhalf{
+    grid-area: content2;
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.upperhalf p, .lowerhalf p{
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+}
+
+.newsletter{
+    padding: 2rem;
+    height: 90vh; 
+}
+
+.newsletter h1{
+     text-align: center;
+}
+
+.newsletter p{
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+    text-align: center;
+}
+
+form{
+    margin: 3rem 0;
+    text-align: center;
+}
+
+input{
+    padding: 1.2rem;
+    width: 40%;
+    margin: 0.75rem;
+    border: 2px solid #b30086;
+    font-family: "Ubuntu";
+    font-size: 1.2rem;
+}
+
+.submit{
+    font-family: "Ubuntu";
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 15%;
+    background-color: #e600ac;
+}
+
+.submit:hover{
+    background-color: #b30086;
+    color: white;
+}
+
+footer, i{
+    text-align: center;
+    
+  }
+  
+  footer{
+      background-image: linear-gradient(to left, rgba(203, 52, 150, 0), rgba(203, 52, 150,1));
+      padding: 0.75rem;
+  }
+  
+  footer p{
+      font-family: "Ubantu";
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  
+  footer i{
+      color:black;
+  }
+  
+  footer i:hover{
+      color: white;
+  }
+  
+

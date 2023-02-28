@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sesame Apricot Tofu</title>
+        <link rel="stylesheet" href="recipe.css">
+        <link rel="stylesheet" href="review.css">
+        <script src="review.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+    </head>
+
+    <body>
+        
+        <div class="recipe-container">
+            <header>
+                <h1 class="recipe-title">Sesame Apricot Tofu</h1>
+                <hr>
+                <div class="recipe-subtitle">
+                    <span> Prep time: 10mins</span>
+                    <span> Cooking Time: 30mins</span>
+                    <span> Cuisine: Asian-Inspired</span>
+                </div>
+            </header>
+
+            <div class="recipe-decription">
+                <p> Tofu pan-fried into crispiness and made saucy, sticky, and sweet into this Sesame Apricot Tofu. An simple, delicious, vegetarian dinner that's super versatile and easy to make!</p>
+            </div>
+
+            <img src="https://pinchofyum.com/cdn-cgi/image/width=360,height=360,fit=crop/wp-content/uploads/Apricot-Sesame-Tofu-3.jpg" class="main-img" alt="pic" width="380" height="380">
+
+            <div class="ingredients">
+                <h3> Ingredients</h3>
+                <ul>
+                    <li>1 block of tofu</li>
+                    <li>2 tablespoons cornstarch</li>
+                    <li>1 tablespoon soy sauce</li>
+                    <li>2 tablespoons olive oil</li>
+                    <li>1/3 cup apricot preserves</li>
+                    <li>1 tablespoons soy sauce</li>
+                    <li>1-2 tablespoons vinegar</li>
+                    <li>1/2 teaspoon each cumin, paprika, and onion powder</li>
+                    <li>1-2 cloves garlic, grated</li>
+                    <li>1/4 teaspoon salt</li>
+                    <li>cooked rice</li>
+                    <li>toasted sesame oil to taste</li>
+                    <li>chives and/or cilantro for topping</li>
+                    <li>steamed beans</li>
+                </ul>
+                
+            </div>
+
+            <div class="Instructions">
+                <h3> Instructions</h3>
+                <ol>
+                    <li>Cut the tofu block in half. Press the water out of the tofu by wrapping it in paper towels. Let it stay like that for a few minutes while you prep the sauce.</li>
+                    <li>Whisk the apricot preserves, soy sauce, vinegar, cumin, paprika, onion powder and garlic together to make the apricot sauce. </li>
+                    <li>Take each piece of tofu and gently pull it into small chunks with your hands. Place the chunks in a bowl. Toss with soy sauce and a teaspoon or two of olive oil; then sprinkle with cornstarch and give it a few gentle tosses to coat.</li>
+                    <li>In a nonstick pan over medium high heat, heat the olive oil and then add the cornstarched tofu. Leave it undisturbed for a few minutes on each side, letting it get really nice and brown and crispy.</li>
+                    <li>Finally, add the sauce to the tofu and remove from heat.</li>
+                    <li>Top with the green onions and/or cilantro, sesame seeds, and sesame oil. Serve with rice and green beans, and finish with more salt and black pepper to taste. </li>
+                </ol>
+            </div>
+            <h3 class="Equip"> Equipment Required</h3>
+            <div class="Equipment">
+                <div class="image-with-caption">
+                    <img src="https://gluman.com/wp-content/uploads/2021/02/4-600x600.jpg" alt="pic" width="200" height="200">
+                    <p>Mixing Bowl</p>
+                </div>
+
+                <div class="image-with-caption">
+                    <img src="https://m.media-amazon.com/images/I/81w1isabkmS._SX425_.jpg" alt="pic" width="200" height="200">
+                    <p> Chopping Board</p>
+                </div>
+
+                <div class="image-with-caption">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/813892g4MxL._AC._SR360,460.jpg" alt="pic" width="200" height="200">
+                    <p>Non-stick Pan</p>
+                </div>
+
+
+                
+            </div>
+        </div>
+
+        
+        <h3 class="review-title">Loved this recipe? Leave a review!</h3>
+        <button id="reviewbutton" onclick="openButton()">Review</button>
+
+    <dialog class="modal" id="modal"> <!-- review container-->
+        
+        <div class="review-heading">
+            <h3>Review</h3>
+            <button class="close-button" onclick="closeButton()">&times;</button>
+        </div>
+        <div class="review-content" id="review-content">
+            <form name="myform" onsubmit="return validate();">
+            Name:<br>
+            <input type="text" name="fullname" id="fname" class="textboxes" placeholder="Enter Full Name" ><br><br>
+            E-mail:<br>
+            <input type="email" name="email" id="email" class="textboxes" placeholder="Enter your E-mail" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"><br><br>
+            Recipe:<br>
+            <input type="text" name="recipename" class="textboxes" value="Sesame Apricot Tofu" readonly><br><br>
+            
+            
+            <p>Was the recipe easy to follow?</p>
+            
+            <input type="radio" name="choice1" id="q1">Yes<br>
+            <input type="radio" name="choice1" id="q1" >No<br>
+            <input type="radio" name="choice1" id="q1" >Somewhat<br>
+            
+            
+            
+            <p>Would you recommend this recipe to others?</p>
+            
+            <input type="radio" name="choice2" id="q2" >Yes<br>
+            <input type="radio" name="choice2" id="q2" >No<br>
+            <input type="radio" name="choice2" id="q2" >Maybe<br>
+            
+            
+            <p>How likely are you to follow this recipe again?</p>
+            <input type="radio" name="choice3" id="q3">Very likely<br>
+            <input type="radio" name="choice3" id="q3" >Somewhat likely<br>
+            <input type="radio" name="choice3" id="q3" >Very unlikely<br><br><br>
+         
+            Additonal Comments/Feedback:<br>
+            <textarea name="comments" class="textboxes" cols="120" rows="10" style="max-width:100%;"></textarea>
+            
+            <div class="button">
+             <input type="submit" name="submit" class="submit-button" >
+            </div>
+
+          </form>
+
+        </div>
+    </dialog>
+    
+    </body>
+</html>

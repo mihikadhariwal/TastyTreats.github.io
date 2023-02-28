@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Veggie Enchiladas</title>
+        <link rel="stylesheet" href="recipe.css">
+        <link rel="stylesheet" href="review.css">
+        <script src="review.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+    </head>
+
+    <body>
+        
+        <div class="recipe-container">
+            <header>
+                <h1 class="recipe-title">Veggie Enchiladas</h1>
+                <hr>
+                <div class="recipe-subtitle">
+                    <span> Prep time: 30mins</span>
+                    <span> Cooking Time: 30mins</span>
+                    <span> Cuisine: Mexican</span>
+                </div>
+            </header>
+
+            <div class="recipe-decription">
+                <p>Saucy, cheese, filling, cozy, and packed with any roasted veggies you want. Super versatile and easy to make!</p>
+            </div>
+
+            <img src="https://pinchofyum.com/wp-content/uploads/Easy-Veggie-Enchiladas-Square.jpg" class="main-img" alt="pic" width="380" height="380" style="transform: rotate(360deg); ">
+
+            <div class="ingredients">
+                <h3> Ingredients</h3>
+                <ul>
+                    <li>1 head of broccoli, cut into florets (2 cups)</li>
+                    <li>1 small sweet potato, peeled and diced (2 cups)</li>
+                    <li>1 red bell pepper, sliced (1 cup)</li>
+                    <li>1 onion, sliced (1 cup)</li>
+                    <li>a drizzle of olive oil</li>
+                    <li>a pinch of salt</li>
+                    <li>canned black beans, rinsed and drained</li>
+                    <li>2 cups shredded cheese</li>
+                    <li>2-3 cups enchilada sauce </li>
+                    <li>10-12 corn tortillas</li>
+                    <li>avocado, cilantro, and lime for serving</li>
+                    
+
+                </ul>
+                
+            </div>
+
+            <div class="Instructions">
+                <h3> Instructions</h3>
+                <ol>
+                    <li><b>Veggies:</b> Preheat the oven to 425 degrees. Arrange veggies on a large sheet pan. Toss with olive oil and salt. Roast for 25-30 minutes.</li>
+                    <li><b>Filling: </b> In a large bowl, combine roasted veggies with the black beans, 1 cup cheese and 1 cup enchilada sauce. Stir / gently mash to make a filling.</li>
+                    <li><b>Roll Enchiladas:</b> Spread some enchilada sauce on the bottom of a 9x13 pan. Roll filling into tortillas, and place them seam-side down in the pan. Cover with remaining sauce and cheese.</li>
+                    <li><b>Bake:</b> Cover with foil and bake for 15-20 minutes, until bubbly and hot. Serve with avocado slices, cilantro, and a squeeze of lime.</li>
+                    
+                    
+                </ol>
+            </div>
+            <h3 class="Equip"> Equipment Required</h3>
+            <div class="Equipment">
+                <div class="image-with-caption">
+                    <img src="https://gluman.com/wp-content/uploads/2021/02/4-600x600.jpg" alt="pic" width="200" height="200">
+                    <p>Mixing Bowl</p>
+                </div>
+
+                <div class="image-with-caption">
+                    <img src="https://cdn.shopify.com/s/files/1/0569/6883/9344/products/OvenToasterGrillersSA5018_1200x1200.jpg?v=1631782792" alt="pic" width="200" height="200">
+                    <p>Oven</p>
+                </div>
+
+                <div class="image-with-caption">
+                    <img src="https://assets.bonappetit.com/photos/5dd46202139bff000abb0bc0/master/w_1280%2Cc_limit/Basically-Sheet-Pans.jpg" alt="pic" width="200" height="200">
+                    <p>Sheet Pan</p>
+                </div>
+
+
+                
+            </div>
+        </div>
+
+        <h3 class="review-title">Loved this recipe? Leave a review!</h3>
+        <button id="reviewbutton" onclick="openButton()">Review</button>
+
+    <dialog class="modal" id="modal"> <!-- review container-->
+        
+        <div class="review-heading">
+            <h3>Review</h3>
+            <button class="close-button" onclick="closeButton()">&times;</button>
+        </div>
+        <div class="review-content" id="review-content">
+            <form name="myform" onsubmit="return validate();">
+            Name:<br>
+            <input type="text" name="fullname" id="fname" class="textboxes" placeholder="Enter Full Name" ><br><br>
+            E-mail:<br>
+            <input type="email" name="email" id="email" class="textboxes" placeholder="Enter your E-mail" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" ><br><br>
+            Recipe:<br>
+            <input type="text" name="recipename" class="textboxes" value="Veggie Enchiladas" readonly><br><br>
+            
+            
+            <p>Was the recipe easy to follow?</p>
+            
+            <input type="radio" name="choice1" id="q1" >Yes<br>
+            <input type="radio" name="choice1" id="q1" >No<br>
+            <input type="radio" name="choice1" id="q1" >Somewhat<br>
+            
+            
+            
+            <p>Would you recommend this recipe to others?</p>
+            
+            <input type="radio" name="choice2" id="q2" >Yes<br>
+            <input type="radio" name="choice2" id="q2" >No<br>
+            <input type="radio" name="choice2" id="q2" >Maybe<br>
+            
+            
+            <p>How likely are you to follow this recipe again?</p>
+            <input type="radio" name="choice3" id="q3" >Very likely<br>
+            <input type="radio" name="choice3" id="q3" >Somewhat likely<br>
+            <input type="radio" name="choice3" id="q3" >Very unlikely<br><br><br>
+         
+            Additonal Comments/Feedback:<br>
+            <textarea name="comments" class="textboxes" cols="120" rows="10" style="max-width:100%;"></textarea>
+            
+            <div class="button">
+             <input type="submit" name="submit" class="submit-button" >
+            </div>
+
+          </form>
+
+        </div>
+    </dialog>
+    
+    
+    </body>
+</html>

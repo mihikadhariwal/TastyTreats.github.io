@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: 100%;
+    margin: 1rem 2rem;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    background-image: linear-gradient(to left, rgba(203, 52, 150, 0), rgba(203, 52, 150,1));
+    padding: 0.1em 0;
+}
+
+h1{
+    margin: 0;
+    font-weight: 500;
+    font-family: "Comfortaa";
+    font-size: 3.5rem;
+}
+
+i{
+    padding: 0.5rem;
+}
+
+.subtitle{
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    /*font-size: 1rem;*/
+    font-size:calc(0.5rem + 0.5vw);
+    word-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+span{
+    font-family: "Rock Salt";
+    color: #651a4b;
+    font-weight: bold;
+    word-spacing: 0.01rem;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+}
+
+nav li{
+  margin: 0 1em;
+}
+
+nav a{
+   text-transform: uppercase;
+   font-family: "Ubuntu";
+   text-decoration: none;
+   letter-spacing: 0.1rem;
+   color: black;
+   font-weight: 700;
+}
+
+nav a:hover{
+  border-bottom:  solid #651a4b;
+  border-bottom-width: 3px;
+  padding-bottom: 5px;
+  transition: ease-in-out 250ms;
+}
+
+.current{
+    border-bottom: solid #651a4b;
+    border-bottom-width: 3px;
+    padding-bottom: 5px;
+  }
+  
+.current:hover{
+      transition: none;
+  }
+
+h2{
+    font-family: "Comfortaa";
+    font-size: 3rem;
+    text-align: center;
+}
+
+.all-recipes-container{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1.5rem;
+    justify-content: space-around;
+    
+}
+
+.appetizers, .mains, .dessert{
+    font-family: "Ubuntu";
+    font-size: 1.2rem;
+}
+
+.appetizers h3, .mains h3, .dessert h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 1rem 0 0;
+}
+
+img{
+    justify-content: center;
+}
+
+.all-recipes-container ul li{
+    padding: 1rem;
+    margin: 1rem;
+    list-style: none;
+    text-align:center;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.all-recipes-container li a{
+    color: black;
+}
+
+.all-recipes-container li a:hover{
+    color:#ff00bf;
+}
+
+
+hr{
+    width: 60%;
+}
+
+footer, i{
+    text-align: center;
+    
+  }
+  
+  footer{
+      background-image: linear-gradient(to left, rgba(203, 52, 150, 0), rgba(203, 52, 150,1));
+      padding: 0.75rem;
+  }
+  
+  footer p{
+      font-family: "Ubantu";
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  
+  footer i{
+      color:black;
+  }
+  
+  footer i:hover{
+      color: white;
+  }

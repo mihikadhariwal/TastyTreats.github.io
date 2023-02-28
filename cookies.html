@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Chocolate Chip Cookies</title>
+        <link rel="stylesheet" href="recipe.css">
+        <link rel="stylesheet" href="review.css">
+<script src="review.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+    </head>
+
+    <body>
+        
+        <div class="recipe-container">
+            <header>
+                <h1 class="recipe-title">Chocolate Chip Cookies</h1>
+                <hr>
+                <div class="recipe-subtitle">
+                    <span> Prep time: 10mins</span>
+                    <span> Cooking Time: 10mins</span>
+                    <span> Cuisine: American</span>
+                </div>
+            </header>
+
+            <div class="recipe-decription">
+                <p>These are THE BEST soft chocolate chip cookies! No chilling required. Just ultra thick, soft, classic chocolate chip cookies!</p>
+            </div>
+
+            <img src="https://i.pinimg.com/736x/f3/85/ba/f385baa0e75ac4ef2798bd5b908c9a36.jpg" class="main-img" alt="pic" width="330" height="330" style="transform: rotate(360deg); ">
+
+            <div class="ingredients">
+                <h3> Ingredients</h3>
+                <ul>
+                    <li>8 tablespoons of salted butter </li>
+                    <li>1/2 cup white sugar</li>
+                    <li>1/4 cup packed light brown sugar</li>
+                    <li>1 teaspoon vanilla</li>
+                    <li>1 egg</li>
+                    <li>1 1/2 cups all purpose flour </li>
+                    <li>1/2 teaspoon baking soda </li>
+                    <li>1/4 teaspoon salt  </li>
+                    <li>3/4 cup chocolate chips</li>
+
+                </ul>
+                
+            </div>
+
+            <div class="Instructions">
+                <h3> Instructions</h3>
+                <ol>
+                    <li>Preheat the oven to 350 degrees. Microwave the butter for about 40 seconds to just barely melt it. </li>
+                    <li>Using a stand mixer or electric beaters, beat the butter with the sugars until creamy. Add the vanilla and the egg; beat on low speed until just incorporated - 10-15 seconds or so</li>
+                    <li>Add the flour, baking soda, and salt. Mix until crumbles form. Use your hands to press the crumbles together into a dough.  Add the chocolate chips and incorporate with your hands.</li>
+                    <li>Roll the dough into 12 large balls and place on a cookie sheet. Bake for 9-11 minutes until the cookies look puffy and dry and just barely golden.</li>
+                </ol>
+            </div>
+            <h3 class="Equip"> Equipment Required</h3>
+            <div class="Equipment">
+                
+                    <div class="image-with-caption">
+                        <img src="https://pinchofyum.com/wp-content/uploads/oxo-cookie-spatula-183x183.jpg" alt="pic" width="200" height="200">
+                        <p>Cookie Spatula</p>
+                    </div>
+
+                    <div class="image-with-caption">
+                        <img src="https://pinchofyum.com/wp-content/uploads/pyrex-mixing-bowls-1-183x183.jpg" alt="pic" width="200" height="200">
+                        <p>Mixing Bowl</p>
+                    </div>
+
+                    <div class="image-with-caption">
+                        <img src="https://assets.bonappetit.com/photos/5dd46202139bff000abb0bc0/master/w_1280%2Cc_limit/Basically-Sheet-Pans.jpg" alt="pic" width="200" height="200">
+                        <p>Sheet Pan</p>
+                    </div>
+
+               
+
+
+                
+            </div>
+        </div>
+
+        <h3 class="review-title">Loved this recipe? Leave a review!</h3>
+        <button id="reviewbutton" onclick="openButton()">Review</button>
+
+    <dialog class="modal" id="modal"> <!-- review container-->
+        
+        <div class="review-heading">
+            <h3>Review</h3>
+            <button class="close-button" onclick="closeButton()">&times;</button>
+        </div>
+        <div class="review-content" id="review-content">
+            <form name="myform" onsubmit="return validate();">
+            Name:<br>
+            <input type="text" name="fullname" id="fname" class="textboxes" placeholder="Enter Full Name" ><br><br>
+            E-mail:<br>
+            <input type="email" name="email" id="email" class="textboxes" placeholder="Enter your E-mail" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+            ><br><br>
+            Recipe:<br>
+            <input type="text" name="recipename" class="textboxes" value="Chocolate Chip Cookies" readonly><br><br>
+            
+            
+            <p>Was the recipe easy to follow?</p>
+            
+            <input type="radio" name="choice1" id="q1" >Yes<br>
+            <input type="radio" name="choice1" id="q1" >No<br>
+            <input type="radio" name="choice1" id="q1" >Somewhat<br>
+            
+            
+            
+            <p>Would you recommend this recipe to others?</p>
+            
+            <input type="radio" name="choice2" id="q2" >Yes<br>
+            <input type="radio" name="choice2" id="q2" >No<br>
+            <input type="radio" name="choice2" id="q2" >Maybe<br>
+            
+            
+            <p>How likely are you to follow this recipe again?</p>
+            <input type="radio" name="choice3" id="q3" >Very likely<br>
+            <input type="radio" name="choice3" id="q3" >Somewhat likely<br>
+            <input type="radio" name="choice3" id="q3" >Very unlikely<br><br><br>
+         
+            Additonal Comments/Feedback:<br>
+            <textarea name="comments" class="textboxes" cols="120" rows="10" style="max-width:100%;"></textarea>
+            
+            <div class="button">
+             <input type="submit" name="submit" class="submit-button" >
+            </div>
+
+          </form>
+
+        </div>
+    </dialog>
+    
+    </body>
+</html>

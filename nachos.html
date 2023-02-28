@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nachos and Cheese</title>
+        <link rel="stylesheet" href="recipe.css">
+        <link rel="stylesheet" href="review.css">
+        <script src="review.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+    </head>
+
+    <body>
+        
+        <div class="recipe-container">
+            <header>
+                <h1 class="recipe-title">Nachos and Cheese</h1>
+                <hr>
+                <div class="recipe-subtitle">
+                    <span> Prep time: 15mins</span>
+                    <span> Cooking Time: 40mins</span>
+                    <span> Cuisine: Mexican-Inspired</span>
+                </div>
+            </header>
+
+            <div class="recipe-decription">
+                <p>Spicy Lentil Nachos with Three Cheese Sauce-you will not believe how good these are! Saucy filling with a velvety homemade cheese sauce. Vegetarian.</p>
+            </div>
+
+            <img src="https://images.squarespace-cdn.com/content/v1/566e2b170e4c116bdc12e02c/1604354162017-N6LBO0V0XQAJ19M59Y5Q/spicy-lentil-nachos.jpeg" class="main-img" alt="pic" width="370" height="370" style="transform: rotate(90deg);">
+
+            <div class="ingredients">
+                <h3> Ingredients</h3>
+                <ul>
+                    <li>1 cup uncooked lentils</li>
+                    <li>4 cups enchilada sauce</li>
+                    <li>3-4 cups broth or water</li>
+                    <li>1 teaspoon salt</li>
+                    <li>chips</li>
+                    <li>cilantro, avocado, jalapeno, and lime for topping</li>
+                    <li>4 tablespoons butter</li>
+                    <li>4 tablespoons flour</li>
+                    <li>1 1/2 cups milk</li>
+                    <li>1 1/2 cups shredded cheese</li>
+                    <li>1/2 teaspoon salt</li>
+
+                </ul>
+                
+            </div>
+
+            <div class="Instructions">
+                <h3> Instructions</h3>
+                <ol>
+                    <li>Rinse the lentils. Bring the enchilada sauce and 2 cups broth to a low simmer. Add the lentils and cook, stirring occasionally, for 30-40 minutes or until everything is soft and most of the moisture has been absorbed. If things are getting too dry, add some of the extra broth to the pot while it's simmering. The sauce should eventually take on a thick gravy-like consistency.</li>
+                    <li>Meanwhile, melt the butter in a small saucepan. Stir in the flour.</li>
+                    <li>Add the milk slowly, whisking to smooth out any lumps of flour. Simmer until the mixture thickens. Remove from heat and stir in the cheese.</li>
+                    <li>Top the chips with a scoop of the lentil mixture, the cheese sauce, avocado, and cilantro.</li>
+                </ol>
+            </div>
+            <h3 class="Equip"> Equipment Required</h3>
+            <div class="Equipment">
+                <div class="image-with-caption">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/813892g4MxL._AC._SR360,460.jpg" alt="pic" width="200" height="200">
+                    <p>Saucepan</p>
+                </div>
+
+                <div class="image-with-caption">
+                    <img src="https://www.ikea.com/in/en/images/products/idealisk-grater-stainless-steel__0713134_pe729282_s5.jpg?f=xs" alt="pic" width="200" height="200">
+                    <p>Grater</p>
+                </div>
+
+                
+
+
+                
+            </div>
+        </div>
+
+        <h3 class="review-title">Loved this recipe? Leave a review!</h3>
+        <button id="reviewbutton" onclick="openButton()">Review</button>
+
+    <dialog class="modal" id="modal"> <!-- review container-->
+        
+        <div class="review-heading">
+            <h3>Review</h3>
+            <button class="close-button" onclick="closeButton()">&times;</button>
+        </div>
+        <div class="review-content" id="review-content">
+            <form name="myform" onsubmit="return validate();">
+            Name:<br>
+            <input type="text" name="fullname" id="fname" class="textboxes" placeholder="Enter Full Name" ><br><br>
+            E-mail:<br>
+            <input type="email" name="email" id="email" class="textboxes" placeholder="Enter your E-mail" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"><br><br>
+            Recipe:<br>
+            <input type="text" name="recipename" class="textboxes" value="Nachos and Cheese" readonly><br><br>
+            
+            
+            <p>Was the recipe easy to follow?</p>
+            
+            <input type="radio" name="choice1" id="q1" >Yes<br>
+            <input type="radio" name="choice1" id="q1" >No<br>
+            <input type="radio" name="choice1" id="q1" >Somewhat<br>
+            
+            
+            
+            <p>Would you recommend this recipe to others?</p>
+            
+            <input type="radio" name="choice2" id="q2" >Yes<br>
+            <input type="radio" name="choice2" id="q2" >No<br>
+            <input type="radio" name="choice2" id="q2" >Maybe<br>
+            
+            
+            <p>How likely are you to follow this recipe again?</p>
+            <input type="radio" name="choice3" id="q3" >Very likely<br>
+            <input type="radio" name="choice3" id="q3">Somewhat likely<br>
+            <input type="radio" name="choice3" id="q3" >Very unlikely<br><br><br>
+         
+            Additonal Comments/Feedback:<br>
+            <textarea name="comments" class="textboxes" cols="120" rows="10" style="max-width:100%;"></textarea>
+            
+            <div class="button">
+             <input type="submit" name="submit" class="submit-button" >
+            </div>
+
+          </form>
+
+        </div>
+    </dialog>
+    
+    </body>
+</html>
